@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odo Tracker</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#007bff" />
+</head>
+<body>
+  <h1>Odo Tracker</h1>
+  <p>This is a basic placeholder for your app UI.</p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log('Service worker registered:', reg))
+        .catch(err => console.log('Service worker registration failed:', err));
+    }
+  </script>
+</body>
+</html>
